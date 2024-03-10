@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply custom-scrollbar;
+  }
+
+  * {
+    @apply m-0 box-border p-0;
+  }
+}
+
+@layer components {
+  .flex-start-center {
+    @apply flex items-center justify-start;
+  }
+
+  .flex-start-end {
+    @apply flex items-end justify-start;
+  }
+
+  .flex-between-start {
+    @apply flex items-start justify-between;
+  }
+
+  .flex-between-center {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-between-end {
+    @apply flex items-end justify-between;
+  }
+
+  .flex-center-start {
+    @apply flex items-start justify-center;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-end-start {
+    @apply flex items-start justify-end;
+  }
+
+  .flex-end-center {
+    @apply flex items-center justify-end;
+  }
+
+  .flex-end {
+    @apply flex items-end justify-end;
+  }
+
+  .container {
+    @apply mx-auto max-w-[3000px];
+  }
+
+  .paddingX {
+    @apply px-3 xxs:px-3.5 xs:px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20;
+  }
+
+  .padding-X-2 {
+    @apply px-10;
+  }
+
+  .paddingL {
+    @apply pl-3 xxs:pl-3.5 xs:pl-4 sm:pl-6 md:pl-8 lg:pl-12 xl:pl-16 2xl:pl-20;
+  }
+
+  .paddingY {
+    @apply py-2;
+  }
+
+  .border-br {
+    @apply border-b border-r;
+  }
+
+  .border-tl {
+    @apply border-l border-t;
+  }
+
+  .white-border {
+    @apply border-white/30;
+  }
+
+  ._id {
+    @apply xxs:_green xs:_red bg-blue-900 sm:bg-pink-900 md:bg-teal-900 lg:bg-yellow-900 xl:bg-indigo-900 2xl:bg-purple-900;
+  }
+
+  ._red {
+    @apply bg-red-900;
+  }
+
+  ._green {
+    @apply bg-green-900;
+  }
+
+  ._hide {
+    @apply hidden;
+  }
+
+  .containerH {
+    max-height: calc(100dvh - 110px);
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    .custom-scrollbar::-webkit-scrollbar {
+      margin-top: 27px;
+      width: 5px;
+      height: 100%;
+      background: transparent;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #1a1a1c;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: #2a2a2c;
+    }
+  }
+}

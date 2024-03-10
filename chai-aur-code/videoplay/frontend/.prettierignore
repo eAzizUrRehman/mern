@@ -1,0 +1,27 @@
+# Ignore all files in the node_modules directory
+node_modules
+
+# Ignore build output
+/dist
+
+# Ignore generated files
+/build
+
+# Ignore coverage reports
+/coverage
+
+# Ignore cache directories
+/.cache
+
+# Ignore logs
+/logs
+
+# Ignore environment files
+.env
+
+# Ignore any files or directories starting with a dot
+.*
+
+# Ignore specific files
+*.log
+*.txt

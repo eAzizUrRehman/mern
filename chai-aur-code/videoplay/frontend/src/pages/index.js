@@ -1,0 +1,13 @@
+export { default as Home } from "./Home/Home";
+export { default as Channel } from "./Channel/Channel";
+export { default as ChannelVideos } from "./Channel/Videos/Videos";
+export { default as ChannelVideo } from "./Channel/Videos/Video/Video";
+export { default as Playlists } from "./Channel/Playlists/Playlists";
+export { default as Playlist } from "./Channel/Playlists/Playlist/Playlist";
+export { default as Tweets } from "./Channel/Tweets/Tweets";
+export { default as Subscribed } from "./Channel/Subscribed/Subscribed";
+export { default as Edit } from "./Channel/Edit/Edit";
+export { default as Signup } from "./Signup/Signup";
+export { default as Login } from "./Login/Login";
+export { default as Dashboard } from "./Dashboard/Dashboard";
+export { default as Video } from "./Videos/Video/Video";
